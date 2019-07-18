@@ -1,0 +1,474 @@
+/* Header */
+.header {
+  background: #EEE;
+  padding: 5px 0;
+}
+
+/* Header - Menu */
+
+.menu {
+  align-self: center;
+}
+
+.menu ul {
+  float: right;
+  display: flex;
+}
+
+.menu ul li a{
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  color: #15181B;
+  text-decoration: none;
+  padding: 15px 0;
+  margin-left: 30px;
+}
+
+.menu ul li a:hover {
+  font-weight: bold;
+}
+
+.menu ul li.current-page {
+  font-weight: bold;
+}
+
+.menu ul li.current-page::after {
+  content: '';
+  width: calc(100%  - 30px);
+  height: 2px;
+  background: #15181B;
+  display: block;
+  position: relative;
+  top: -15px;
+  float: right;
+}
+
+.menu ul li .btn-participe {
+  color: #FFF;
+  background: linear-gradient(#DD2222, #BB1111);
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 1px 1px  4px rgba(0, 0, 0, .25)
+}
+
+.menu ul li .btn-participe:hover {
+  font-weight: normal;
+  background: #BB1111;
+}
+
+
+/* Botão Menu */ 
+
+.btn-menu {
+  float: right;
+  display: none;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.btn-menu span, 
+.btn-menu span::after,
+.btn-menu span::before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 4px;
+  background: #15181B;
+  transition: 0.5s; 
+}
+
+.btn-menu span::before {
+transform: translateY(20px)
+}
+
+.btn-menu span::after {
+  transform: translateY(10px) 
+}
+
+.btn-menu.active span {
+  height: 0;
+}
+
+.btn-menu.active span::after {
+  transform: rotate(45deg);  
+  margin-top: 10px;
+}
+
+.btn-menu.active span::before {
+  transform: rotate(-45deg);
+  margin-top: 10px;
+}
+
+/* Header - mobile */
+@media only screen and (max-width: 739px) {
+
+  .js .header .flex {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    max-width: none;
+  }
+
+  .header {
+    padding: 5px 30px;
+  }
+
+  .menu ul {
+    display: block;
+  }
+  
+  .js .menu ul {
+    display: none;
+  }
+
+  .menu ul.active  {
+    float: none;
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #EEE;
+    animation: show-top .2s;
+  }
+
+  .menu ul li a{
+    padding: 10px 15px;
+    padding: 15px;
+    margin-left: 0;
+  }
+
+  .menu ul li {
+    border-bottom: 2px solid #DDD;
+  }
+
+  .menu ul li.current-page::after {
+    display: none;
+  }
+
+  .menu ul {
+    padding: 0 15px 15px 15px;
+  }
+
+   .js .btn-menu {
+    display: inline-block;
+  }
+
+}
+
+/* intro */
+.intro {
+  padding: 240px 0 60px 0;
+  background: #004477;
+  background-image: url('../img/bg-intro.svg');
+}
+
+.intro h1 {
+  font-family: 'Roboto Slab', serif;
+  color: #FFF;
+  font-size: 4rem;
+  padding-right: 70px;
+}
+
+/* intro form */
+.intro .form-whatsapp {
+  align-self: flex-end;
+}
+.intro .form-whatsapp label{
+  display: none;
+  color: #BB1111;
+}
+
+.intro .form-whatsapp p {
+  color: #EEE;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.875rem;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.intro .form-whatsapp > div {
+  display: flex;
+  float: right;
+}
+
+.intro .form-whatsapp input, .intro .form-whatsapp button {
+  padding: 15px;
+  font-size: 1.125rem;
+  border: none;
+  outline: none;
+}
+
+.intro .form-whatsapp input {
+  color: #15181B;
+  border-radius: 5px 0 0 5px;
+  width: 250px;
+}
+
+.intro .form-whatsapp button {
+  color: #EEE;
+  background: #DD2222 ;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  width: 170px;
+}
+
+.intro .form-whatsapp button:hover {
+  background: #BB1111;
+} 
+
+@media only screen and (max-width: 739px) {
+  .intro {
+    padding:  60px 0;
+  }
+  
+  .intro h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .intro .form-whatsapp p {
+    color: #EEE;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.875rem;
+    text-align: center;
+    
+  }
+
+  .intro .form-whatsapp > div {
+    display: flex;
+    flex-direction: column;
+    float: none;
+  }
+
+  .intro .form-whatsapp input, .intro .form-whatsapp button {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .intro .form-whatsapp input {
+    margin-bottom: 5px;
+  }
+}
+
+/* noticias */
+.noticias {
+  position: relative;
+  top: 120px;
+}
+
+.noticias h2 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2.25rem;
+  text-align: center;
+  color: #15181B;
+  margin: -60px 0 60px 0;
+}
+
+.noticias .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.noticias .noticias-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: #EEE;
+  background-size: cover;
+  /* width: 300px; */
+  min-height: 350px;
+  padding: 15px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.noticias .noticias-item:nth-child(1) {
+  background: url('../img/energia.jpg') no-repeat;
+  background-size: cover;
+}
+.noticias .noticias-item:nth-child(2) {
+  background: url('../img/natureza.jpg') no-repeat;
+  background-size: cover;
+}
+.noticias .noticias-item:nth-child(3) {
+  background: url('../img/tecnologia.jpg') no-repeat;
+  background-size: cover;
+}
+
+.noticias .noticias-item h3 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2.25rem;
+  color: #FFF;
+  margin-bottom: 5px;
+  transition: .3s;
+}
+
+.noticias .noticias-item:hover {
+  box-shadow: inset 0 0 50px 20px rgba(0, 0, 0, .25);
+} 
+
+.noticias .noticias-item:hover span {
+  transform: translate3d(0, -20px, 0);
+}
+
+.noticias .noticias-item:hover h3 {
+  transform: translate3d(0, -20px, 0);  
+}
+
+.noticias .noticias-item span {
+  font-family: 'Roboto', serif;
+  font-size: 0.875rem;
+  color: #CECECE;
+  transition: .3s;
+}
+
+.noticias .noticias-item::after {
+  content: '';
+  position: relative;
+  bottom: 5px; 
+  display: block;
+  width: 0;
+  height: 4px;
+  background: #FFF;
+  transition: .5s;
+}
+
+.noticias .noticias-item:hover::after {
+  content: '';
+  position: relative;
+  bottom: 5px; 
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: #FFF;
+}
+
+/* Noticias - Botão Mais noticias */
+.noticias .noticias-mais {
+  flex: 1;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+  transition: .3s;
+  background: #FFF;
+}
+.noticias .noticias-mais:hover {
+  background: #EEE;
+}
+
+.noticias .noticias-mais h3 {
+  font-size: 1.5rem;
+  padding: 15px;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  color: #15181B;
+}
+
+/* Noticias - Responsivo */
+
+@media only screen and (max-width: 739px) {
+  .noticias .container {
+    flex-direction: column; 
+  } 
+}
+/* Sobre */
+.sobre {
+  background: #CECECE;
+  padding: 180px 0 60px 0;
+}
+
+.sobre h2 {
+  font-family: 'Roboto Slab', serif;
+  color: #15181B;
+  font-size: 4rem;
+  margin-bottom: 15px;
+}
+
+.sobre p {
+  font-family: 'Roboto', serif;
+  color: #15181B;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+}
+
+.sobre ul {
+  margin: 30px 0;
+}
+
+.sobre ul li:first-child {
+  border-top: 2px solid #809FAB;
+}
+
+.sobre ul li {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 2px solid #809FAB;
+}
+
+
+
+.sobre ul li span {
+  margin-left: 15px;
+  font-size: 1.125rem;
+  color: #15181B;
+  font-family: 'Roboto', serif;
+}
+
+.sobre a {
+  display: inline-block;
+  font-family: 'Roboto', serif;
+  font-size: 0.875rem;
+  color: #DD2222;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.sobre a:hover {
+  text-decoration: underline;
+}
+
+.sobre a::after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-left-color: #DD2222;
+  margin-left: 10px;
+}
+
+/* Sobre - Responsivo */
+@media only screen and (max-width: 739px) {
+  .sobre .image {
+    margin-bottom: 30px;
+  }
+}
+
+
+/* Animações */
+@keyframes show-top {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0)
+  }
+}
+
+
+

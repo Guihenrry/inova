@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Home</title>
+	<!-- verificar se o javascript esta ativo  -->
+	<script> document.documentElement.className += ' js'; </script>
+	<!-- CSS -->
+	<link rel="stylesheet" href="style.css">
+	<!-- Font | Roboto e Roboto Slab -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="flex">
+			<a href="/page-home.html" class="flex-item-4"><img src="img/logo.png" alt="Logo MIB"></a>
+			<nav class="menu flex-item-8">
+				<a class="btn-menu" data-menu="button">
+					<span></span>
+				</a>
+				<ul data-menu="list">
+					<li class="current-page"><a href="#">Início</a></li>
+					<li><a href="#">Sobre</a></li>
+					<li><a href="#">Notícias</a></li>
+					<li><a href="#">Líderes</a></li>
+					<li><a href="#" class="btn-participe">Participe</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section class="intro">
+		<div class="flex">
+			<h1 class="flex-item-6">Movimento Inova Bahia </h1>
+
+			<form action="" class="flex-item-6 form-whatsapp">
+				<p>Deixe seu whatsapp e fique por dentro de todas as noticias do MIB</p>
+				<div>
+					<label for="whatsapp">whatsapp</label>
+					<input type="text" id="whatsapp" placeholder="Whatsapp">
+					<button>Cadastra-se</button>
+				</div>
+
+			</form>
+		</div>
+	</section>
+
+	<section class="noticias">
+		<h2>Notícias - que você não pode perder</h2>
+		<div class="container">
+			<div class="noticias-item">
+				<h3>Energias renovaveis </h3>
+				<span>Junho 2019</span>
+			</div>
+			<div class="noticias-item">
+				<h3>O Contato com a natureza </h3>
+				<span>Maio 2019</span>
+			</div>
+			<div class="noticias-item">
+				<h3>Qual é o futuro da tecnologia?</h3>
+				<span>Maio 2019</span>
+			</div>
+			<a class="noticias-mais">
+					<h3>Conferir mais noticias</h3>
+					<img src="img/seta.svg" alt="">
+			</a>
+		</div>
+	</section>
+
+	<section class="sobre"> 
+		<div class="flex">
+			<div class="flex-item-6 image">
+				<img src="img/image-sobre.png" alt="Inovação">
+			</div>
+			<div class="flex-item-6">
+				<h2>Saiba mais sobre o movimento</h2>
+				<p>O Movimento Inova Bahia (MIB) é resultado da insatisfação do povo baiano com as práticas da "velha política", aliada ao anseio da nossa população por alternativas políticas inovadoras, distantes da polarização habitual da política que tanto faz mal ao nosso país e ao nosso estado.</p>
+				<ul>	
+					<li>
+						<img src="img/ico-inovacao.svg" alt="Robo">
+						<span>Inovação</span>
+					</li>
+					<li>
+						<img src="img/ico-estrategias.svg" alt="Lampada">
+						<span>Inovação</span>
+					</li>
+					<li>
+						<img src="img/ico-sustentabilidade.svg" alt="Planta">
+						<span>Inovação</span>
+					</li>
+				</ul>
+				<p>O Movimento Inova Bahia (MIB) é resultado da insatisfação do povo baiano com as práticas da "velha política", aliada ao anseio da nossa população por alternativas políticas inovadoras, distantes da polarização.</p>
+				<a href="#">Saiba mais sobre o movimento</a>
+			</div>
+		</div>
+	</section>
+
+
+	<script type="module" src="js/script.js"></script>
+</body>
+
+</html>
