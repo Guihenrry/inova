@@ -113,6 +113,11 @@ transform: translateY(20px)
 
   .header {
     padding: 5px 30px;
+    min-height: 60px;
+  }
+
+  .logo {
+    min-width: 100px;
   }
 
   .menu ul {
@@ -218,18 +223,8 @@ transform: translateY(20px)
   background: #BB1111;
 } 
 
-@media only screen and (max-width: 739px) {
-  .intro {
-    padding:  60px 0;
-  }
-  
-  .intro h1 {
-    font-size: 3rem;
-    margin-bottom: 30px;
-    text-align: center;
-    padding-right: 0;
-  }
-
+/* intro responsivo */
+@media only screen and (max-width: 920px) {
   .intro .form-whatsapp p {
     color: #EEE;
     font-family: 'Roboto', sans-serif;
@@ -251,6 +246,18 @@ transform: translateY(20px)
 
   .intro .form-whatsapp input {
     margin-bottom: 5px;
+  }
+}
+@media only screen and (max-width: 739px) {
+  .intro {
+    padding:  60px 0;
+  }
+  
+  .intro h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-align: center;
+    padding-right: 0;
   }
 }
 
@@ -454,6 +461,10 @@ transform: translateY(20px)
 @media only screen and (max-width: 739px) {
   .sobre .image {
     margin-bottom: 30px;
+  }
+
+  .sobre h2 {
+    font-size: 3rem;
   }
 }
 
