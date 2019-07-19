@@ -30,7 +30,7 @@
 					<li><a href="#">Sobre</a></li>
 					<li><a href="#">Notícias</a></li>
 					<li><a href="#">Líderes</a></li>
-					<li><a href="#" class="btn-participe">Participe</a></li>
+					<li><a href="#" class="btn-participe" data-modal="open" >Participe</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -214,6 +214,22 @@
 			</ul>
 		</nav>
 	</footer>
+
+	<section class="modal-container" data-modal="container">
+		<div class="modal">
+			<button class="modal-btn-close" data-modal="close"></button>
+			<p>Cadastra-se para receber todas as novidades</p>
+			<form action="">
+				<label for="nome-modal">Nome</label>
+				<input type="text" id="nome-modal" name="nome-modal">
+				<label for="email-modal">Email</label>
+				<input type="text" id="email-modal" name="email-modal">
+				<label for="whatsapp-modal">Whatsapp</label>
+				<input type="text" id="whatsapp-modal" name="whatsapp-modal">
+				<button type="submit">Participar</button>
+			</form>
+		</div>
+	</section>
 
 	<script type="module" src="js/script.js"></script>
 </body>

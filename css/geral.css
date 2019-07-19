@@ -587,6 +587,11 @@ transform: translateY(20px)
   margin-bottom: 15px;
 }
 
+.contato .form input:hover, 
+.contato .form textarea:hover  {
+  border: 2px solid #6A7176;
+}
+
 .contato .form button {
   color: #FFF;
   background: #DD2222;
@@ -749,6 +754,128 @@ transform: translateY(20px)
   color: #15181B;
 }
 
+/* modal - participar */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, .25);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container.active {
+  display: flex;
+}
+
+.active .modal {
+  animation: show-top .5s forwards;
+}
+
+.modal {
+  background: #EEE;
+  max-width: 570px;
+  padding: 60px; 
+  margin: 30px;
+  flex-direction: column;
+  position: relative;
+}
+
+.modal p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.125rem;
+  color: #15181B;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+.modal .modal-btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: #EEE;
+  height: 40px;
+  width: 40px;
+  outline: none;
+  cursor: pointer;
+}
+
+.modal .modal-btn-close::after, .modal .modal-btn-close::before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 4px;
+  background: #6A7176;
+  margin-left: -10px;
+}
+
+.modal .modal-btn-close:hover::after, .modal .modal-btn-close:hover::before {
+  background: #15181B; 
+}
+
+.modal .modal-btn-close::after {
+  transform: rotate(45deg);
+}
+
+.modal .modal-btn-close::before {
+  transform: rotate(-45deg);
+}
+
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal form label {
+  font-family: 'Roboto', sans-serif;
+  color: #15181B;
+  font-size: 1.125rem;
+  margin-bottom: 5px;
+}
+
+.modal form input {
+  font-family: 'Roboto', sans-serif;
+  color: #15181B;
+  font-size: 1.125rem;
+  padding: 15px 10px;
+  outline: none;
+  margin-bottom: 15px;
+  background: #B6C0C3;
+  border: 2px solid #809FAB;
+  border-radius: 5px;
+}
+
+.modal form input:hover {
+  border: 2px solid #6A7176;
+}
+
+.modal form button {
+  width: 120px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.125rem;
+  color: #EEE;
+  background: #DD2222;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.modal form button:hover {
+  background: #BB1111;
+}
+
+@media only screen and (max-width: 739px) {
+  .modal {
+    padding: 30px;
+  }
+} 
 
 
 /* Animações */
