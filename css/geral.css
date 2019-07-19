@@ -182,7 +182,6 @@ transform: translateY(20px)
 }
 .intro .form-whatsapp label{
   display: none;
-  color: #BB1111;
 }
 
 .intro .form-whatsapp p {
@@ -207,6 +206,7 @@ transform: translateY(20px)
 
 .intro .form-whatsapp input {
   color: #15181B;
+  background: #EEE;
   border-radius: 5px 0 0 5px;
   width: 250px;
 }
@@ -331,7 +331,7 @@ transform: translateY(20px)
 }
 
 .noticias .noticias-item span {
-  font-family: 'Roboto', serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 0.875rem;
   color: #CECECE;
   transition: .3s;
@@ -403,7 +403,7 @@ transform: translateY(20px)
 }
 
 .sobre p {
-  font-family: 'Roboto', serif;
+  font-family: 'Roboto', sans-serif;
   color: #15181B;
   font-size: 1.125rem;
   line-height: 1.875rem;
@@ -430,12 +430,12 @@ transform: translateY(20px)
   margin-left: 15px;
   font-size: 1.125rem;
   color: #15181B;
-  font-family: 'Roboto', serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .sobre a {
   display: inline-block;
-  font-family: 'Roboto', serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 0.875rem;
   color: #DD2222;
   text-decoration: none;
@@ -467,6 +467,288 @@ transform: translateY(20px)
     font-size: 3rem;
   }
 }
+
+/* Lideres */
+.lideres {
+  padding: 60px 0;
+}
+
+.lideres h2 {
+  font-family: 'Roboto Slab', serif;
+  color: #15181B;
+  font-size: 4rem;
+  text-align: center;
+  max-width: 570px;
+  margin: 0 auto 60px auto;
+}
+
+.lideres ul li {
+  margin-bottom: 30px;
+}
+
+.lideres ul li img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.lideres ul li h3 {
+  font-family: 'Roboto Slab', serif;
+  color: #15181B;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.lideres ul li p {
+  font-family: 'Roboto', sans-serif;
+  color: #6A7176;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.lideres .call p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.125rem;
+  text-align: center;
+  color: #15181B; 
+  margin-bottom: 15px;
+}
+
+.lideres .call a {
+  display: block;
+  color: #FFF;
+  background: linear-gradient(#DD2222, #BB1111);
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  max-width: 100px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Lideres - Responsivo */
+@media only screen and (max-width: 739px) {
+  .lideres h2 {
+    font-size: 3rem;
+  }
+}
+
+/* Contato */
+.contato {
+  padding: 60px 0;
+  border-top: 1px solid #809FAB;
+}
+
+.contato h2 {
+  font-family: 'Roboto Slab', serif;
+  color: #15181B;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 5px;;
+}
+
+.contato .contato-info {
+  font-family: 'Roboto', sans-serif;
+  color: #15181B;
+  font-size: 1.125rem;
+  text-align: center;
+  margin-bottom: 60px;
+  line-height: 1.5;
+}
+
+.contato .form {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #809FAB;
+  padding-right: 60px;
+}
+
+.contato .form label {
+
+  font-family: 'Roboto', sans-serif;
+  color: #15181B;
+  font-size: 1.125rem;
+  margin-bottom: 5px;
+}
+
+.contato .form input, 
+.contato .form textarea  {
+  max-width: 470px;
+  background: #B6C0C3;
+  border: 2px solid #809FAB;
+  padding: 15px 10px;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+.contato .form button {
+  color: #FFF;
+  background: #DD2222;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 180px;
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  padding: 15px;
+  font-size: 1.125rem;
+}
+
+.contato .form button:hover {
+  background: #BB1111;
+}
+
+/* contato Dados */
+.dados {
+  padding-left: 60px;
+}
+
+.dados h3 {
+  font-family: 'Roboto Slab', serif;
+  color: #15181B;
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.dados p {
+  font-family: 'Roboto', sans-serif;
+  color: #15181B;
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+}
+
+.dados .dados-lista {
+  margin-bottom: 10px;
+} 
+
+.dados .dados-lista li {
+  border-bottom: 1px solid #809FAB;
+  margin-bottom: 10px;
+  max-width: 200px;
+}
+
+.social-icons ul {
+  display: flex; 
+  flex-wrap: wrap;
+}
+
+.social-icons ul li {
+  margin: 0 10px 10px 0;
+}
+
+@media only screen and (max-width: 920px) {
+  .contato .form {
+    padding-right: 0;
+    border-right: none;
+  }
+}
+@media only screen and (max-width: 739px) {
+  .contato .form button{
+    margin-bottom: 30px;
+  }
+  .dados {
+    padding-left: 0;
+  }
+}
+
+/* Whatsapp */
+.whatsapp {
+  padding: 60px 0;
+  background: #004477;
+}
+.whatsapp h2 {
+  font-family: 'Roboto Slab', serif;
+  color: #FFF;
+  font-size: 2.25rem;
+  text-align: center;
+  max-width: 570px;
+  margin: 0 auto 30px auto;
+  line-height: 1.2;
+}
+
+.whatsapp form label {
+  display: none;
+}
+
+.whatsapp form input, .whatsapp form button {
+  padding: 15px;
+  font-size: 1.125rem;
+  border: none;
+  outline: none;
+}
+.whatsapp form {
+  display: flex;
+  justify-content: center;
+}
+
+.whatsapp form input {
+  background: #EEE;
+  color: #15181B;
+  border-radius: 5px 0 0 5px;
+}
+
+.whatsapp form button {
+  color: #FFF;
+  background: #DD2222;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+.whatsapp form button:hover {
+  background: #BB1111;
+}
+
+@media only screen and (max-width: 739px) {
+  .whatsapp form {
+    flex-direction: column;
+  }
+  .whatsapp form input , .whatsapp form button {
+    border-radius: 5px;
+  }
+  .whatsapp form input {
+    margin-bottom: 5px;
+  }
+}
+
+/* footer */
+.footer {
+  background: #EEE;
+}
+
+.footer .logo img {
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.footer .footer-menu {
+  background: #CECECE;
+}
+
+.footer .footer-menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer .footer-menu ul li a{
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.125rem;
+  color: #6A7176;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.footer .footer-menu ul li a:hover {
+  color: #15181B;
+}
+
 
 
 /* Animações */
