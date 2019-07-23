@@ -1,0 +1,45 @@
+.lider-container {
+  padding: 60px 0;
+}
+
+.lider-container {
+  border-bottom: 1px solid #809FAB;
+}
+
+.lider-container:last-child {
+  border-bottom: none;
+}
+
+.lider-dados  {
+  align-self: center;
+}
+
+.lider-dados .funcao {
+  font-family: 'Roboto', sans-serif;
+  color: #15181B;
+  font-size: 0.875rem;
+  letter-spacing: 0.14rem;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.lider-dados h2{
+  font-family: 'Roboto Slab', serif;
+  font-size: 2.25rem;
+  color: #15181B;
+  margin-bottom: 20px;
+}
+
+.lider-dados p {
+  font-family: 'Roboto', sans-serif;
+  color: #15181B;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 739px) {
+  .lider-dados {
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,79 @@
+.noticias-whatsapp {
+  background: #006699;
+  padding: 30px;
+  margin-top: -70px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.noticias-whatsapp p {
+  align-self: center;
+  font-family: 'Roboto Slab', sans-serif;
+  line-height: 1.2;
+  color: #FFF;
+  font-size: 2.25rem;
+  text-align: center;
+}
+
+.noticias-whatsapp form {
+  align-self: center;
+}
+
+.noticias-whatsapp form label{
+  display: none;
+}
+
+@media only screen and (max-width: 739px) {
+  .noticias-whatsapp p {
+    margin-bottom: 15px;
+  }
+}
+
+/* articles */
+.articles {
+  padding: 60px 0;
+  
+}
+
+.articles article {
+  margin-bottom: 30px;
+}
+
+.articles a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.articles .image {
+  overflow: hidden;
+}
+
+.articles .image img {
+  transition: all 0.3s;
+}
+
+.articles a:hover img {
+  transform: scale(1.1);
+}
+
+
+.articles a:hover h1 {
+  color: #BB1111;
+}
+
+
+.articles h1{
+  font-family: 'Roboto Slab', serif;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #15181B;
+  margin: 10px 0 5px 0;
+}
+
+.articles .post-meta {
+  font-family: 'Roboto', sans-serif;
+  color: #767373;
+  font-size: 0.875rem;
+}

@@ -223,6 +223,36 @@ transform: translateY(20px)
   background: #BB1111;
 } 
 
+.intro-interna {
+   padding: 120px 0;
+   background: #004477;
+   background-image: url('../img/bg-intro.svg');
+}
+
+.intro-interna h1 {
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-size: 4rem;
+  color: #FFF;
+  /* margin-bottom: 30px; */
+}
+
+.intro-interna h1::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #FFF;
+  margin: 5px auto 10px auto;
+} 
+
+.intro-interna p {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.125rem;
+  color: #FFF;
+}
+
 /* intro responsivo */
 @media only screen and (max-width: 920px) {
   .intro .form-whatsapp p {
@@ -870,6 +900,8 @@ transform: translateY(20px)
 .modal form button:hover {
   background: #BB1111;
 }
+
+
 
 @media only screen and (max-width: 739px) {
   .modal {
