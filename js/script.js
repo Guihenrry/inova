@@ -3,6 +3,3 @@ import initModal from './modules/modal.js';
 
 initMenuMobile();
 initModal();
-
-
-
